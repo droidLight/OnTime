@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">OnTime</string>
+
+    <string-array name="Event_List_ROOT">
+        <item>Silent</item>
+        <item>Wifi On</item>
+        <item>Wifi Off</item>
+        <item>Do Not Disturb</item>
+        <item>Normal</item>
+        <item>MobileData On</item>
+        <item>MobileData Off</item>
+        <item>Ringer Volume</item>
+        <item>Notification Volume</item>
+        <item>Brightness</item>
+        <item>Remainder</item>
+        <item>Airplane mode On</item>
+        <item>Airplane mode Off</item>
+    </string-array>
+
+    <string-array name="Event_List_NOROOT">
+        <item>Silent</item>
+        <item>Wifi On</item>
+        <item>Wifi Off</item>
+        <item>Do Not Disturb</item>
+        <item>Normal</item>
+        <item>Ringer Volume</item>
+        <item>Notification Volume</item>
+        <item>Brightness</item>
+        <item>Remainder</item>
+    </string-array>
+
+    <!--DID NOT include in main program-->
+    <string-array name="skip_days">
+        <item>None</item>
+        <item>Sunday</item>
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+    </string-array>
+
+
+    <string name="documentation">This app was developed by SIBI.N(First year CSE)
+        Reg.no=121003262
+        of SASTRA university.</string>
+    <string name="instruction">If the app is not triggering events at proper time try switching off Doze mode in battery settings</string>
+</resources>

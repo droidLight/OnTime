@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.kalam.sibi.ontime">
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.VIBRATOR" />
+    <uses-permission
+        android:name="android.permission.WRITE_SETTINGS"
+        tools:remove="android:maxSdkVersion" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Activities.MainActivity"
+            android:noHistory="true"
+            android:theme="@style/mainTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".RecyclerView.ActionActivity" />
+        <activity
+            android:name=".Activities.EnterProperty"
+            android:parentActivityName=".RecyclerView.ActionActivity"
+            android:screenOrientation="portrait" />
+
+        <receiver android:name=".AlarmAndEvents.AlarmReceiever" />
+
+        <activity
+            android:name=".Activities.SettingsOption"
+            android:parentActivityName=".RecyclerView.ActionActivity" />
+
+        <activity android:name=".Activities.AboutActivity"
+            android:parentActivityName=".RecyclerView.ActionActivity"/>
+    </application>
+
+</manifest>
